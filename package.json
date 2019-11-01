@@ -1,0 +1,35 @@
+{
+  "name": "yaws-client",
+  "version": "0.1.0",
+  "description": "Yet Another WebSocket Client",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint src/*",
+    "lint:fix": "eslint --fix src/*",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prepublishOnly": "echo \"Do not run publish directly, run tsc-publish\" && exit 1",
+    "tsc-publish": "tsc-publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasterOdin/yaws-server.git"
+  },
+  "author": "Matthew Peveler <matt.peveler@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MasterOdin/yaws-server/issues"
+  },
+  "homepage": "https://github.com/MasterOdin/yaws-server#readme",
+  "dependencies": {
+    "@types/node": "^12.12.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.6.0",
+    "@typescript-eslint/parser": "^2.6.0",
+    "eslint": "^6.6.0",
+    "tsc-publish": "^0.5.1",
+    "typescript": "^3.6.4"
+  }
+}
